@@ -39,6 +39,13 @@ def china():
     length = int(input('Enter the length of password: '))
     china = ('手', '田', '水', '口', '廿', '卜', '山', '戈', '人', '心', '日', '尸', '木', '火', '土', '竹', '十', '大', '中', '難', '金', '女', '月', '弓', '一')
     print(random.sample(china, length))
+    
+def insanity():
+    length = int(input('Enter the length of password: '))
+    insanity = ('𒂝', '𒀱', '𒋨', '𒈞', '𒈓', '𒁎', '𒀱', '𒈔', '𒈒', '𒆙', '𒆜', '𒄆' )
+    print(random.sample(insanity, length))
+    
+    
 
 print("__________                                               .___   ________                                   __                          __   ________   ")
 print("\______   \_____    ______ ________  _  _____________  __| _/  /  _____/  ____   ____   ________________ _/  |_  ___________    _____ |  | _\_____  \  ")
@@ -48,7 +55,7 @@ print(" |____|    (____  /____  >____  >  \/\_/ \____/|__|  \____ |   \______  /
 print("                \/     \/     \/                          \/          \/     \/     \/     \/           \/                          \/     \/       \/ ")
 
 while True:
-    choice = int(input("\n [1] Numbers only \n [2] Words only \n [3] Mixed \n [4] Special Characters \n [5] Bing Chilling \n [Exit] Ctrl-C \n Enter: "))
+    choice = int(input("\n [1] Numbers only \n [2] Words only \n [3] Mixed \n [4] Special Characters \n [5] Bing Chilling \n [6] INSANITY \n [Exit] Ctrl-C \n Enter: "))
     if choice == 1:
         numpwd()
     elif choice == 2:
@@ -59,5 +66,7 @@ while True:
         special()
     elif choice == 5:
         china()
+    elif choice == 6:
+        insanity()
     else:
         print("Error try again")
